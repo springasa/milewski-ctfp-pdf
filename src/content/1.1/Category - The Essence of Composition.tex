@@ -1,3 +1,7 @@
+% !TEX root = ctfp-reader.tex
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+
 \lettrine[lhang=0.17]{A}{category} is an embarrassingly simple concept.
 A category consists of \newterm{objects} and \newterm{arrows} that go between them. That's
 why categories are so easy to represent pictorially. An object can be
@@ -66,9 +70,7 @@ Library that takes two functions and returns their composition, but
 there isn't one. So let's try some Haskell for a change. Here's the
 declaration of a function from A to B:
 
-\begin{Verbatim}
-f :: A -> B
-\end{Verbatim}
+\src{snippet01}
 Similarly:
 
 \begin{Verbatim}

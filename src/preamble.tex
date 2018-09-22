@@ -65,6 +65,7 @@
 
 % Use tikz-cd for commutative diagrams
 \usepackage{tikz-cd}
+\usepackage[framemethod=TikZ]{mdframed}
 
 \usepackage{fancyvrb}
 \fvset{fontsize=\small}
@@ -129,8 +130,6 @@
 
 \usepackage{minted}
 \usemintedstyle{bw}
-\newminted{cpp}{}
-\newminted{haskell}{}
 
 \newcommand{\acronym}[1]{\textsc{\fontspec[Numbers={OldStyle}]{Linux Libertine O}\MakeLowercase{#1}}}
 \newcommand{\newterm}[1]{\index{#1}\emph{#1}}
@@ -174,6 +173,10 @@
 
 \providecommand{\tightlist}{%
 \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+\newcommand{\src}[1]{\inputminted{haskell}{#1}}
+
 
 %====================%
 %  End of preamble.  %
